@@ -30,8 +30,8 @@ function movingAverageFilter(data, windowSize) {
   );
 }
 
-const filteredSignal = movingAverageFilter(signal, 9);
-const filteredNoise = movingAverageFilter(noise, 9);
+const filteredSignal = movingAverageFilter(signal, 4);
+const filteredNoise = movingAverageFilter(noise, 4);
 const filteredSignalPlusNoise = movingAverageFilter(signalPlusNoise, 5);
 
 function calculateFFT(data) {
